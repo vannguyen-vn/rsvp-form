@@ -30,7 +30,7 @@ class RegisterForm extends React.Component {
     } else if (mailformat === null) {
       alert('You have entered an invalid email address!');
     } else {
-      alert('OK!');
+      this.props.addGuess(this.state);
     }
   }
 
