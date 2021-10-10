@@ -6,12 +6,17 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+h2 {
+  text-align: center;
+}
+
 form {
   margin: 12% auto;
   background-color: #f7f7f9;
   border: 3px solid #f1f1f1;
   width: 380px;
-  height: 390px;
+  min-height: 390px;
+  padding: 0px 20px 30px 20px;
 }
 
 

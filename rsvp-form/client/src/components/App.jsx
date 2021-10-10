@@ -1,6 +1,6 @@
 import React from 'react';
 import $ from 'jquery';
-
+import RegisterForm from './RegisterForm.jsx';
 
 
 class App extends React.Component {
@@ -10,7 +10,11 @@ class App extends React.Component {
   }
 
   render() {
-
+    return (
+      <div className='main'>
+        <RegisterForm />
+      </div>
+    )
   }
 }
 
