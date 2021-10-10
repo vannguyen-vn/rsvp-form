@@ -14,12 +14,14 @@ app.use(express.static(__dirname + '/../client/dist'));
 app.post('/rsvps', (req, res) => {
   var params = req.body;
   rsvps.findRsvpAndUpdate(params)
-    .then(() => {
+    .then((result) => {
+      res.Json(result);
       res.sendStatus(201);
       res.end();
     })
     .catch(err => res.send(err).status(500));
 });
+
 
 app.listen(PORT, () => {
   console.log(`listening on port ${PORT}`);

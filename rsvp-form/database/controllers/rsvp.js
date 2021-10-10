@@ -1,12 +1,14 @@
 const Rsvp = require('../models/rsvp.js');
 
 const findRsvpAndUpdate = (params) => {
-  let newGuest = new Rsvp({
+  let newGuest = {
     firstName: params.firstName,
     lastName: params.lastName,
     email: params.email,
     guests: params.guests,
-  });
-  return newGuest.save();
+  };
+  const query = {email: params.email};
+  return Rsvp.findOneAndUpdate(query, newGuest, { upsert: true })
 };
+
 module.exports.findRsvpAndUpdate = findRsvpAndUpdate;
