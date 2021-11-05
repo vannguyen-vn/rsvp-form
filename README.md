@@ -3,8 +3,10 @@
 Build a simple full-stack RSVP form to allow users to respond to their invitation to *_The Party*.
 
 ( *_The Party* is private.)
+
 <p align=“center”>
-<img src=“https://github.com/vannguyen-vn/rsvp-form/blob/master/rsvp-form/client/dist/images/register.jpg” width=“200”></p>
+<img src=“https://github.com/vannguyen-vn/rsvp-form/blob/master/rsvp-form/client/dist/images/register.jpg” width=“200”>
+</p>
 
 ## Requirements:
 
