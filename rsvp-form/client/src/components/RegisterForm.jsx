@@ -24,13 +24,14 @@ class RegisterForm extends React.Component {
     const inputFeilds = document.querySelectorAll("input");
     const validInputs = Array.from(inputFeilds).filter( input => input.value !== "");
     let email = this.state.email;
-    var mailformat = email.match(/local@domain/);
+    var mailformat = email.match(/@/);
     if (validInputs.length < 4) {
       alert('You need to fill out all information!');
     } else if (mailformat === null) {
       alert('You have entered an invalid email address!');
     } else {
       this.props.addGuess(this.state);
+      alert(`${this.state.firstName}, you and your ${this.state.guests} guests are now on the list. We\'ll send an email confirmation to ${this.state.email}.`);
     }
   }
 
