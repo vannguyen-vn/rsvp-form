@@ -36,3 +36,11 @@ Build a simple full-stack RSVP form to allow users to respond to their invitatio
 - [React Documentation](https://reactjs.org/docs/hello-world.html)
 - [Express Documentation](https://expressjs.com/en/api.html)
 - [Mongoose Documentation](http://mongoosejs.com/docs/api.html)
+
+## Installation
+npm is the package management system for this project.
+
+Use npm install to install all dependencies.
+
+To start the server, use npm run start.
+To build, use npm run react-dev.
